@@ -1,0 +1,213 @@
+div#q_periodic_table_dialog {
+   position: fixed;
+   left: 20px;
+   top:  300px;
+   width:  400px;
+   height: 260px;
+   background: white;
+   outline: 2px solid blue;
+   box-shadow: 3px 3px 2px gray;
+   z-index: 100;
+}
+div#q_periodic_table_dialog_header {
+   position: relative;
+   padding: 3px 3px 0 3px;
+   line-height: normal;
+   z-index: 10;
+}
+div#q_periodic_table_dialog_handle {
+   position: absolute;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+   background: lightblue;
+   z-index: -1;
+   cursor: move;
+}
+div#q_periodic_table_dialog_search {
+   display: inline-block;
+   float: right;
+   margin-top: -3px;
+   font-size: 10pt;
+   z-index: 2;
+}
+div#q_periodic_table_dialog_search > div {
+   display: inline-block;
+   cursor: pointer;
+}
+img#q_periodic_table_dialog_exit {
+   width: 16px;
+   height: 16px;
+   vertical-align: middle;
+}
+
+.qwiz-zoom-container {
+  width:  100%;
+  height: calc(100% - 30px);
+  position: relative;
+  overflow: hidden !important;
+  background: white;
+  z-index: 3;
+}
+
+.qwiz-zoom-container-inner {
+  position: absolute;
+  z-index: 3;
+}
+.qwiz-zoom-container-inner-content {
+   position: relative;
+}
+
+.qwiz-zoom-control {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+.qwiz-zoom-control-reset {
+   width: 13px;
+   height: 13px;
+   transform: translateY(-2px);
+}
+.qwiz_periodic_table_info {
+   width: 14px;
+   height: 14px;
+   transform: translateY(-2px);
+   cursor: help;
+}
+
+.qwiz-zoom-control:hover {
+  outline: 2px solid lightgray;
+}
+
+
+@media screen and (max-width: 360px) {
+  .qwiz-zoom-control {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/**********************************
+*  ZOOM PLUGIN STYLE
+**********************************/
+.zoomable-area {
+  position: relative;
+}
+
+.animateCSS {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.hideWhileAnimate {
+  display: none !important;
+}
+
+.top-element {
+  z-index: 1000;
+}
+
+/*
+.draggable {
+  cursor: move;
+}
+*/
+
+.unselectable,
+.zoomable-area {
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+   /* Introduced in IE 10. See http://ie.microsoft.com/testdrive/HTML5/msUserSelect/ */
+  -ms-user-select: none;
+  user-select: none;
+}
+
+
+table.q_periodic_table {
+   margin-right: 10px;
+   margin-bottom: 10px;
+}
+
+table.q_periodic_table td {
+   width:            30px;
+   height:           28px;
+   min-width:        30px;
+   min-height:       28px;
+   border:           none !important;
+   padding:          0 2px 2px 2px;
+   vertical-align:   middle;
+   font-family:      Verdana, sans serif;
+   white-space:      nowrap;
+}
+table.q_periodic_table td.period_num {
+   width:            15px !important;
+   min-width:        15px !important;
+   text-align:       right;
+   font-size:        14pt;
+}
+table.q_periodic_table td.group_num {
+   text-align:       center;
+   vertical-align:   bottom;
+   font-size:        8pt;
+}
+table.q_periodic_table td.group_num a {
+   text-decoration:  none;
+}
+
+table.q_periodic_table td.period_num.periodic_table_large {
+   font-size:        4pt;
+}
+table.q_periodic_table td.group_num.periodic_table_large {
+   font-size:        4pt;
+}
+
+div.atomic_number.periodic_table_large {
+   margin-bottom:    -2px;
+   font-size:        3pt;
+}
+.element_symbol {
+   font-size:        14pt;
+   text-align:       center;
+}
+.element_symbol.periodic_table_large {
+   font-size:        8pt;
+}
+div.element_name {
+   text-align:       center;
+   font-size:        8pt;
+}
+div.element_name.periodic_table_large {
+   font-size:        3.5pt;
+}
+.center {
+   text-align:       center;
+}
+
+div.hover-select-dropdown {
+   position:         absolute;
+   top:              20px;
+   left:             5px;
+   display:          none;
+   height:           250px;
+   overflow-x:       hidden;
+   overflow-y:       auto;
+   border:           1px solid gray;
+   padding:          3px;
+   box-sizing:       border-box;
+   background:       white;
+   cursor:           pointer;
+   font-size:        12pt;
+   font-family:      Verdana, sans serif;
+   z-index:          10;
+}
+div.hover-select-dropdown-content {
+   padding-right:    10px;
+   display:          inline-block;
+}
+div.hover-select-list-item:hover {
+   outline:          1px solid darkgray;
+}
