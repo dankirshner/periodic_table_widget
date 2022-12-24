@@ -1,5 +1,13 @@
 # Periodic Table Widget
 
+## Introduction
+
+The periodic table widget provides a link that pops-up an interactive periodic table.
+
+The pop-up is clickable, searchable, draggable, and resizable.
+
+The widget is also available in the WordPress [Qwizcards plugin](https://wordpress.org/plugins/qwiz-online-quizzes-and-flashcards).
+
 ## Static images
 
 <img src="https://qwizcards.net/wp-content/uploads/2022/12/periodic_table_initial.jpg" width="360" /> <img src="https://qwizcards.net/wp-content/uploads/2022/12/period_table_click.jpg" width="360" />
